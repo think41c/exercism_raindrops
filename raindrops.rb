@@ -7,7 +7,7 @@ class Raindrops
     end
 
     if answer == []
-      answer = x.to_s
+      x.to_s
     else
       answer.join
     end
