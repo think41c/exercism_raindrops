@@ -11,7 +11,7 @@ class Raindrops
       end
     end
     if answer.size == 0 
-      answer = x
+      answer = x.to_s
       answer.to_s
     else
       answer.join
