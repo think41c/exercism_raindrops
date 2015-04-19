@@ -6,5 +6,11 @@ class Raindrops
     result << "Plong" if  x % 7 == 0
     result << x       if result == []
     result.join
+
+    # result = hash.map do |number, word|
+    # word if x % number == 0
+    # end
+
   end
+
 end
