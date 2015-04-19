@@ -8,12 +8,10 @@ class Raindrops
     result[7] = "Plong"
     
     result.map do |num, word|
-      if x % num == 0 then
-        answer << word
-      end
+      answer << word if x % num == 0 
     end
     
-    if answer.size == 0 
+    if answer == []
       answer = x.to_s
     else
       answer.join
@@ -21,4 +19,3 @@ class Raindrops
 
   end
 end
-p Raindrops.convert(5)
