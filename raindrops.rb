@@ -11,7 +11,6 @@ class Raindrops
     else
       answer.join
     end
-
   end
 
   def self.rain_sounds
