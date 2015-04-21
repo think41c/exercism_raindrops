@@ -15,11 +15,11 @@ class Raindrops
   end
 
   def self.rain_sounds
-    result = {}
-    result[3] = "Pling"
-    result[5] = "Plang"
-    result[7] = "Plong"
-    result     
+    result = {
+    3 => "Pling",
+    5 => "Plang",
+    7 => "Plong",
+    }
   end
 
 end
