@@ -17,7 +17,7 @@ class Raindrops
     result = {
     3 => "Pling",
     5 => "Plang",
-    7 => "Plong",
+    7 => "Plong"
     }
   end
 
