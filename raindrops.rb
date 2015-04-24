@@ -1,8 +1,7 @@
 class Raindrops
   def self.convert(x)
     answer = []
-    
-    rain_sounds.map do |num, word|
+    rain_sounds.each do |num, word|
       answer << word if x % num == 0 
     end
 
@@ -20,5 +19,4 @@ class Raindrops
     7 => "Plong"
     }
   end
-
 end
