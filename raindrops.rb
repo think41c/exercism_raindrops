@@ -1,13 +1,16 @@
 class Raindrops
   def self.convert(x)
+    
     answer = rain_sounds.map do |num, word|
       word if x % num == 0
     end
+
     if answer == [nil, nil, nil]
       x.to_s
     else
       answer.join
     end
+
   end
 
   def self.rain_sounds
@@ -18,4 +21,3 @@ class Raindrops
     }
   end
 end
-# p Raindrops.convert(12121)
