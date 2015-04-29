@@ -1,11 +1,9 @@
 class Raindrops
   def self.convert(x)
-    answer = []
-    rain_sounds.each do |num, word|
-      answer << word if x % num == 0 
+    answer = rain_sounds.map do |num, word|
+      word if x % num == 0
     end
-
-    if answer == []
+    if answer == [nil, nil, nil]
       x.to_s
     else
       answer.join
@@ -13,10 +11,11 @@ class Raindrops
   end
 
   def self.rain_sounds
-    result = {
+    {
     3 => "Pling",
     5 => "Plang",
     7 => "Plong"
     }
   end
 end
+# p Raindrops.convert(12121)
