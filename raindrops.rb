@@ -14,8 +14,7 @@ class Raindrops
   end
 
   def self.rain_sounds
-    {
-    3 => "Pling",
+    { 3 => "Pling",
     5 => "Plang",
     7 => "Plong"
     }
