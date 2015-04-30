@@ -5,7 +5,7 @@ class Raindrops
       word if x % num == 0
     end
 
-    if answer == [nil, nil, nil]
+    if answer.compact.empty?
       x.to_s
     else
       answer.join
