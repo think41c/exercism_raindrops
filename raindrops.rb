@@ -1,16 +1,18 @@
 class Raindrops
-  def self.convert(x)
-    
-    answer = rain_sounds.map do |num, word|
-      word if x % num == 0
-    end
+  def self.convert(number)
+    answer = sounds(number)
 
     if answer.compact.empty?
-      x.to_s
+      number.to_s
     else
       answer.join
     end
+  end
 
+  def self.sounds(number)
+    answer = rain_sounds.map do |num, word|
+      word if number % num == 0
+    end
   end
 
   def self.rain_sounds
